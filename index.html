@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gortenzii.ing Shop</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+
+<header class="header">
+
+    <div class="logo-block">
+
+        <img src="images/logo.png" alt="Gortenzii.ing" class="logo-img">
+
+        <div>
+            <h1>Gortenzii.ing shop</h1>
+            <p>Каталог растений</p>
+        </div>
+
+    </div>
+
+    <nav>
+        <button class="nav-btn active">Главная</button>
+        <button class="nav-btn">Корзина</button>
+    </nav>
+
+</header>
+
+<main>
+
+    <div id="products"></div>
+
+</main>
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal" class="close">
+            ×
+        </span>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
