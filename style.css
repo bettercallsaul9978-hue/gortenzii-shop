@@ -8,8 +8,6 @@
 body{
     background:linear-gradient(135deg,#07153a,#020817);
     color:white;
-    max-width:430px;
-    margin:0 auto;
     min-height:100vh;
     padding:14px;
 }
@@ -158,21 +156,11 @@ nav{
     object-fit:cover;
     border-radius:15px;
     margin-bottom:15px;
-}
-.close{
-    position:absolute;
-    right:15px;
-    top:10px;
-    font-size:32px;
-    cursor:pointer;
-    color:white;
+
+    max-height:85vh;
+    overflow-y:auto;
 }
 
-.modal-content img{
-    width:100%;
-    border-radius:15px;
-    margin-bottom:15px;
-}
 
 .close{
     float:right;
@@ -329,4 +317,33 @@ nav{
     line-height:1.6;
     color:#dbe5ff;
     font-size:15px;
+}
+@media (max-width:480px){
+
+    #products{
+        gap:10px;
+    }
+
+    .card img{
+        height:130px;
+    }
+
+    .card-title{
+        font-size:13px;
+        min-height:auto;
+    }
+
+    .card-price{
+        font-size:16px;
+    }
+
+    .category-title{
+        font-size:24px;
+        margin:25px 0 15px;
+    }
+
+    .logo-block h1{
+        font-size:18px;
+    }
+
 }
