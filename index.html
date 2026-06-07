@@ -10,6 +10,9 @@
 
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
+<div id="toast" class="toast">
+    Товар добавлен в корзину
+</div>
 <body>
 
 <header class="header">
@@ -25,16 +28,24 @@
 
     </div>
 
-    <nav>
-        <button class="nav-btn active">Главная</button>
-        <button class="nav-btn">Корзина</button>
-    </nav>
+   <nav>
+    <button id="homeBtn" class="nav-btn active">Главная</button>
+    <button id="cartBtn" class="nav-btn">Корзина</button>
+</nav>
 
 </header>
 
 <main>
 
     <div id="products"></div>
+
+    <div id="cartPage" style="display:none;">
+        <h2 class="section-title">Корзина</h2>
+
+        <div id="cartItems"></div>
+
+        <div id="cartTotal"></div>
+    </div>
 
 </main>
 
